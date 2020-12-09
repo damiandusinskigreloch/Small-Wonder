@@ -1,5 +1,8 @@
-document.querySelector('.menu-btn').addEventListener('click', () => {
-  document.querySelector('.menu-container').classList.toggle('show');
-  document.querySelector('.menu-btn').classList.toggle('show');
+let menuBtn = document.querySelector('.menu-btn');
+let menuContainer = document.querySelector('.menu-container');
+
+menuBtn.addEventListener('click', () => {
+  menuContainer.classList.toggle('show');
+  menuBtn.classList.toggle('show');
 });
 
