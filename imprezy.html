@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Zorganizuj u nasz impreze">
+  <meta name="keywords" content="okazja, impreza, wynajem">
+  <meta name="author" content="ddg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Small Wonder - Impreza</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Start menu -->
+    <div class="menu">
+      <div class="menu-btn">
+        <p><i class="fas fa-bars fa-3x"></i></p>
+      </div>
+      <div class="menu-container text-center">
+        <nav>
+          <ul class="main-menu">
+            <li><a href="./">Start</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a class="active" href="#">Imprezy</a></li>
+            <li><a href="rezerwacja.html">Rezerwacja</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+          <ul class="social-menu">
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-3x"></i></a></li>
+            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Start header -->
+    <header class="sub-page party-header">
+    </header>
+    <!-- Start main -->
+    <main>
+      <section class="party text-center">
+        <header class="container">
+          <h2 class="primary-header">Imprezy</h2>
+          <p class="lead">Mieścimy się w stuletnim budynku dawnego kina, urzekającym zabytkową architekturą i klimatem
+            rynku Krakowskiego. Przestrzeń restauracji, zaaranżowana z wyjątkowym smakiem, jest idealna do organizacji różnego typu imprez okazjonalnych i przyjęć firmowych.</p>
+        </header>
+        <div class="space container">
+          <div class="inner-container">
+            <h2 class="primary-header">Przestrzeń</h2>
+            <p class="lead">Do dyspozycji naszych gości oddajemy powierzchnię o różnych możliwościach aranżacji. Sala
+            główna z barem i sąsiadującymi pomieszczeniami dysponuje 30 miejscami siedzącymi.</p>
+            <p class="number-of-seets">30</p>
+            <h4>Miejsc siedzących</h4>
+            <p class="small-text">W zależności od charakteru imprezy i liczebności gości możemy zaoferować lokal
+              na wyłączność bądź przygotować kameralne przyjęcie w jednej z przytulnych stref.</p>
+          </div>
+        </div>
+        <div class="form-container container">
+          <h4>Wypełnij formularz</h4>
+          <form action="">
+            <label for="name">Imie i nazwisko*</label>
+            <input type="text" name="name" id="name" placeholder="Jan Kowalski" required>
+            <label for="company">Firma</label>
+            <input type="text" name="company" id="company" placeholder="Apple">
+            <label for="number-of-guest">Liczba osób*</label>
+            <input type="number" name="number-of-guest" min="1" max="30" id="number-of-guest" placeholder="1-30" required>
+            <label for="phone">Telefon*</label>
+            <input type="tel" name="phone" minlength="9" id="phone" placeholder="555-555-555" required>
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" placeholder="main@mail.com" required>
+            <label for="date">Podaj date*</label>
+            <input type="date" name="date" id="date" required>
+            <label for="coments">Pytania</label>
+            <textarea name="coments" id="coments" maxlength="300">
+            </textarea>
+            <input type="submit" value="Wyślij zapytanie">
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer and contact -->
+    <footer>
+      <div class="container text-center content-center">
+        <img class="logo" src="img/logo.png" alt="small wonder logo">
+        <div class="contact">
+          <p>ul. Ratanowa 12, 33-389 Kraków</p>
+          <p>tel: +48 691 911 535</p>
+          <p>rezerwacje@smallwonder.pl</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

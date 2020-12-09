@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Zarezerwuj u nas stolik">
+  <meta name="keywords" content="rezerwacja, przyjęcie, dla dwojga, randka">
+  <meta name="author" content="ddg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Small Wonder - Rezerwacja</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Start menu -->
+    <div class="menu">
+      <div class="menu-btn">
+        <p><i class="fas fa-bars fa-3x"></i></p>
+      </div>
+      <div class="menu-container text-center">
+        <nav>
+          <ul class="main-menu">
+            <li><a href="./">Start</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="imprezy.html">Imprezy</a></li>
+            <li><a class="active" href="#">Rezerwacja</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+          <ul class="social-menu">
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-3x"></i></a></li>
+            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Start header -->
+    <header class="sub-page reservation-header">
+    </header>
+    <!-- Start main -->
+    <main>
+      <section class="reservation container text-center">
+        <header>
+          <h2 class="primary-header">Zarezerwuj stolik</h2>
+          <p class="lead"> Jeśli chcesz zarezerwować stolik, zadzwoń pod numer 691 911 535 lub wypełnij poniższy
+            formularz. W przypadku rezerwacji za pomocą formularza warunkiem jej przyjęcia jest otrzymanie maila z
+            potwierdzeniem.</p>
+        </header>
+        <div class="form-container">
+          <h4>Wypełnij formularz</h4>
+          <form action="">
+            <label for="date">Podaj date*</label>
+            <input type="date" name="date" id="date" required>     
+            <label for="reservation-time">Godzina</label>
+            <select name="reservation-time" id=""  required>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+            </select>
+            <label for="number-of-guest">Liczba osób*</label>
+            <input type="number" name="number-of-guest" min="1" max="6" id="number-of-guest" placeholder="1-6" required>            
+            <label for="name">Imie i nazwisko*</label>
+            <input type="text" name="name" id="name" placeholder="Jan Kowalski" required>
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" placeholder="email@email.com" required>
+            <label for="phone">Telefon*</label>
+            <input type="tel" name="phone" id="" minlength="9" placeholder="55555555" required>
+            <label for="coments">Pytania</label>
+            <textarea name="coments" id="coments"  maxlength="300"></textarea>
+            <input type="submit" value="Wyślij zapytanie">
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer and contact -->    
+    <footer>
+      <div class="container text-center content-center">
+        <img class="logo" src="img/logo.png" alt="small wonder logo">
+        <div class="contact">
+          <p>ul. Ratanowa 12, 33-389 Kraków</p>
+          <p> tel: +48 691 911 535</p>
+          <p>rezerwacje@smallwonder.pl</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
