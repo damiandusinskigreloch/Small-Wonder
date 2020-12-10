@@ -1,427 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Shadows+Into+Light+Two&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
-/* Var */
-:root{
-  --primary-color: hsl(152, 73%, 33%);
-
-}
-/* Reset */
-*{
-  box-sizing: border-box;
+* {
+  padding: 0;
   margin: 0;
-  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-html{
+
+html {
   font-size: 10px;
-  font-family: 'Lato', sans-serif;
-}
-a{
-  text-decoration: none;
-  color: #fff;
-}
-p{
-  font-size: 1.6rem;
-  line-height: 1.6;
-}
-ul{
-  list-style: none;
-}
-img{
-  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Menu */
-.menu-container{
-  display: block;
-  position: fixed;
-  padding: 20px 0 40px;
-  width: 100%;
-  background-color: var(--primary-color);
-  transform: translateY(-100%);
-  transition: .5s ease-in;
-  z-index: 1;
-}
-.menu-btn{
-  cursor: pointer;
-}
-.menu-btn p i{
-  transition: .5s ease-in;
-}
-.menu-btn.show p i{
-  transform: rotate(90deg);
-}
-
-.main-menu a{
-  position: relative;
-  display: inline-block;
-  padding: 0 10px;
-  margin-top: 15px;
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  outline: none;
-}
-.social-menu {
-  margin-top: 20px;
-}
-.social-menu li {
-  display:inline-block;
-  margin-left: 20px;
-  color: #fff;
-}
-.social-menu > li:first-child{
-  margin-left: 0px;
-}
-.main-menu >li:first-child a {
-margin-top: 0;
-}
-.main-menu a.active::before{
-content: '';
-position: absolute;
-left: 0;
-right: 0;
-bottom: -3px;
-width: 100%;
-height: 1px;
-background-color: #fff;
-}
-
-.show{
-transform: translateX(0);
-}
-
-.menu-btn{
-  position: fixed;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  background-color: var(--primary-color);
-  color: #fff;
-  z-index: 2;
-}
-
-/* Header */
-header.home-page{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background:url('../img/main-bg-md.jpg') no-repeat center center/cover;
-}
-header .container{
-  padding: 0;
-}
-header .container h1{
-  font-family: 'Lobster', cursive;
-  font-size: 2.4rem;
-  color:  #222;
-}
-
-/* About-us */
-.about-us .btn{
-  margin-top: 30px;
-}
-.about-us-bg,
-.philosophy-bg,
-.beer-bg{
-  background-attachment: fixed;
-}
-.about-us-bg{
-  background: url('../img/menu-sm.jpg') no-repeat center center/cover;
-}
-
-/* Philosophy */
-.philosophy-bg{
-    background: url('../img/vegetable-sm.jpg') no-repeat center center/cover;
-}
-/* Beer */
-.beer-bg{
-  background: url('../img/beer-sm.jpg') no-repeat center center/cover;
-}
-/* footer and contact */
-footer{
-  position: relative;
-  height: 100vh;
-}
-footer img.logo{
-  width: 200px;
-}
-footer .container{
-  padding:0;
-}
-
-footer .contact p:first-child{
-  margin-top: 0px;
-}
-footer .contact p{
-  font-size: 2.4rem;
+p {
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 
-/* Menu page */
-.menu-header{
-  background:url('../img/menu-sm.jpg') no-repeat center center/cover;
-}
-.restaurant-menu .primary-header{
-  margin-top: 60px;
-}
-.type-of-dish{
+h1 {
   font-size: 3.2rem;
-  font-weight: 400;
-}
-.dish-container{
-  padding:20px 0px;
-  margin-top: 40px;
-  border-bottom: 1px solid #ddd;
-}
-.container > .dish-container:first-child{
-  margin-top: 0;
-  padding-top: 0;
 }
 
-.food-box{
-  padding: 10px 10px;
+a {
+  color: #fdfdfd;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-.food-box .dish{
-  font-size: 2rem;
+
+ul {
+  list-style: none;
 }
-.food-box .price{
-  font-weight: bold;
-  margin-top: 5px;
-  font-size: 1.4rem;
+
+.menu {
+  position: relative;
 }
-/* Party page */
-.party-header{
-  background:url('../img/party-sm.jpg') no-repeat center center/cover;
+
+.menu__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background: #179258;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  z-index: 2;
 }
-.space{
-  background-color: var(--primary-color);
-  color: #fff;
+
+.menu__button--show {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
-.space.container{
-  min-width: 100%;
+
+.menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: -450px;
+  left: 0;
+  right: 0;
+  padding: 50px;
+  background: #179258;
+  z-index: 1;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
-.space .primary-header{
+
+.menu__container--active {
+  top: 0;
+}
+
+.menu__item {
+  text-align: center;
+  line-height: 2;
+}
+
+.menu__link {
   font-size: 2.4rem;
 }
-.space h4{
-  font-weight: 200;
-  font-size: 2.6rem;
-  margin: 10px 0 10px;
-}
-.space .primary-header::before,
-.space .primary-header::after{
-  background-color: #fff;
-}
-.number-of-seets{
-  font-size: 10rem;
-}
-/* Reservation */
-.reservation-header{
-  background: url('../img/reservation-sm.jpg') no-repeat center center/cover;
-}
-.reservation .lead{
-  border-bottom: 1px solid #d3d3d3;
-  padding-bottom: 30px;
-}
-/* Contact page */
-header.sub-page.contact-page{
-  height: 90vh;
-  box-shadow: -2px -2px 20px #666;
-}
-.contact-page .logo{
-  margin-bottom: 10px;
-}
-.contact-page .btn{
-  margin: 20px 0;
-}
-.contact-page .container{
-  padding: 0;
+
+.menu__social-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+  width: 40%;
 }
 
-.contact-card p{
-  font-size: 1.8rem;
-}
-.contact-card > *:nth-child(6){
-  margin-top: 20px;
-}
-
-.container-map{
-  height: 100vh;
-  overflow: hidden;
-}
-.map{
-  width: 100%;
-  height: 100vh;
-}
-
-/* Form */
-.form-container h4{
-  font-size: 3.2rem;
-  font-weight: 200;
-  margin: 30px 0 10px;
-}
-label{
+.icon {
   display: block;
-  text-align: left;
-  font-size: 2.2rem;
-}
-input, select, textarea{
-  display: inline-block;
-  padding: 10px 15px;
-  margin: 5px 0 10px;
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  background-color: #fff;
-  color: #444;
-  font-size: 2rem;
-  box-shadow: 1px 1px 2px rgb(146, 146, 146);
-  outline: none;
-
-}
-input[type="submit"]{
-  max-width: 300px;
-  background-color: var(--primary-color);
-  color: #fff;
-  cursor: pointer;
-}
-input:invalid{
-  box-shadow: 1px 1px 2px rgb(197, 56, 56);
-}
-input[name="name"]:valid,
-input[type="tel"]:valid,
-input[type="email"]:valid,
-input[type="number"]:valid,
-input[type="date"]:valid,
-select[name="reservation-time"]
-{
-  box-shadow: 1px 1px 2px rgb(47, 160, 72);
-}
-textarea[name="coments"]{
-  font-family: 'Lato', sans-serif;
-  height: 150px;
-}
-/* Query */
-
-
-
-@media (min-width:640px){
-  .contact-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-  }
-  .contact-page .logo{
-    margin-bottom: 0;
-  }
+  width: 48px;
+  height: 48px;
+  background-size: cover;
 }
 
-
-@media (min-width:750px){
-  .logo{
-    width: 350px;
-  }
-  header.sub-page.contact-page{
-    height: 40vh;
-
-  }
+.icon--instagram {
+  background-image: url(../img/icons/instagram.png);
 }
 
-
-@media (min-width: 860px){
-  .inner-container{
-    width: 800px;
-    margin: 0 auto;
-  }
-  .primary-header{
-    font-size: 5rem;
-  }
+.icon--facebook {
+  background-image: url(../img/icons/facebook.png);
 }
 
-
-@media (min-width:1024px){
-header.home-page .container h1{
-  font-size: 4rem;
+.icon--menu {
+  background-image: url(../img/icons/menu.png);
 }
-
-
-header.sub-page.contact-page{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width:400px;
-  height: 600px;
-  background-color: #fff;
-}
-.contact-card{
-  flex-direction: column;
-}
-.contact-card .logo{
-  width: 200px;
-}
-.space .primary-header{
-  font-size: 4rem;
-}
-.space h4{
-  font-size: 3rem;
-}
-.small-text{
-  font-size: 1.8rem;
-}
-.form-container h4{
-  font-size: 4rem;
-  margin-bottom: 20px;
-}
-.reservation p.lead{
-  padding: 40px 0;
-}
-
-.menu-header{
-  background-image: url('../img/menu-md.jpg');
-}
-.reservation-header{
-  background-image: url('../img/reservation-md.jpg');
-}
-.party-header{
-  background-image: url('../img/party-md.jpg');
-}
-.about-us-bg{
-  background: url('../img/menu-md.jpg') no-repeat center center/cover;
-}
-.philosophy-bg{
-    background: url('../img/vegetable-md.jpg') no-repeat center center/cover;
-}
-.beer-bg{
-  background: url('../img/beer-md.jpg') no-repeat center center/cover;
-}
-
-}
-
-@media (min-width: 1400px){
-.menu-header{
-  background-image: url('../img/menu-lg.jpg');
-}
-.reservation-header{
-  background-image: url('../img/reservation-lg.jpg');
-}
-.party-header{
-  background-image: url('../img/party-lg.jpg');
-}
-.home-page{
-  background:url('../img/main-bg-lg.jpg') no-repeat center center/cover;
-}
-.about-us-bg{
-  background: url('../img/menu-lg.jpg') no-repeat center center/cover;
-}
-.philosophy-bg{
-    background: url('../img/vegetable-lg.jpg') no-repeat center center/cover;
-}
-.beer-bg{
-  background: url('../img/beer-lg.jpg') no-repeat center center/cover;
-}
-
-
-}
+/*# sourceMappingURL=main.css.map */

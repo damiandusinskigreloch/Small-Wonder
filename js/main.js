@@ -1,7 +1,7 @@
-let menuBtn = document.querySelector('.menu-btn');
-let menuContainer = document.querySelector('.menu-container');
+let menuBtn = document.querySelector('.menu__button');
+let menuContainer = document.querySelector('.menu__container');
 menuBtn.addEventListener('click', () => {
-  menuContainer.classList.toggle('show');
-  menuBtn.classList.toggle('show');
+  menuContainer.classList.toggle('menu__container--active');
+  menuBtn.classList.toggle('menu__button--show');
 });
 

@@ -16,26 +16,26 @@
 <body>
   <div class="wrapper">
     <!-- Start menu -->
-    <div class="menu">
-      <div class="menu-btn">
-        <p><i class="fas fa-bars fa-3x"></i></p>
+    <nav class="menu wrapper__menu">
+      <div class="menu__button">
+        <span class="icon icon--menu"></span>
       </div>
-      <div class="menu-container text-center">
-        <nav>
-          <ul class="main-menu">
-            <li><a href="./">Start</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="imprezy.html">Imprezy</a></li>
-            <li><a class="active" href="#">Rezerwacja</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-          </ul>
-          <ul class="social-menu">
-            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-3x"></i></a></li>
-            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a></li>
-          </ul>
-        </nav>
+      <div class="menu__container">
+        <ul class="menu__main-menu-list">
+          <li class="menu__item"><a class="menu__link" class="active" href="./">Start</a></li>
+          <li class="menu__item"><a class="menu__link" href="menu.html">Menu</a></li>
+          <li class="menu__item"><a class="menu__link" href="imprezy.html">Imprezy</a></li>
+          <li class="menu__item"><a class="menu__link" href="rezerwacja.html">Rezerwacja</a></li>
+          <li class="menu__item"><a class="menu__link" href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <ul class="menu__social-menu-list">
+          <li class="menu__item"><a class="menu__link" href="https://www.instagram.com/"><span
+                class="icon icon--instagram"></span></a></li>
+          <li class="menu__item"><a class="menu__link" href="https://www.facebook.com"><span
+                class="icon icon--facebook"></span></a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
     <!-- Start header -->
     <header class="sub-page reservation-header">
     </header>
@@ -52,9 +52,9 @@
           <h4>Wypełnij formularz</h4>
           <form action="">
             <label for="date">Podaj date*</label>
-            <input type="date" name="date" id="date" required>     
+            <input type="date" name="date" id="date" required>
             <label for="reservation-time">Godzina</label>
-            <select name="reservation-time" id=""  required>
+            <select name="reservation-time" id="" required>
               <option value="12">12</option>
               <option value="13">13</option>
               <option value="14">14</option>
@@ -67,7 +67,7 @@
               <option value="21">21</option>
             </select>
             <label for="number-of-guest">Liczba osób*</label>
-            <input type="number" name="number-of-guest" min="1" max="6" id="number-of-guest" placeholder="1-6" required>            
+            <input type="number" name="number-of-guest" min="1" max="6" id="number-of-guest" placeholder="1-6" required>
             <label for="name">Imie i nazwisko*</label>
             <input type="text" name="name" id="name" placeholder="Jan Kowalski" required>
             <label for="email">Email*</label>
@@ -75,13 +75,13 @@
             <label for="phone">Telefon*</label>
             <input type="tel" name="phone" id="" minlength="9" placeholder="55555555" required>
             <label for="coments">Pytania</label>
-            <textarea name="coments" id="coments"  maxlength="300"></textarea>
+            <textarea name="coments" id="coments" maxlength="300"></textarea>
             <input type="submit" value="Wyślij zapytanie">
           </form>
         </div>
       </section>
     </main>
-    <!-- Footer and contact -->    
+    <!-- Footer and contact -->
     <footer>
       <div class="container text-center content-center">
         <img class="logo" src="img/logo.png" alt="small wonder logo">
