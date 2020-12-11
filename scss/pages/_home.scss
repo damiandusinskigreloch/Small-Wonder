@@ -6,11 +6,22 @@
 
   &__container{
     @include position-center;
+    @include media(sm){
+      padding: 60px;
+    }
+
   } 
 
   &__logo{
     margin: 0 auto;
     width: 250px;
+    @include media(sm){
+      width: 200px;
+    }
+    @include media(lg){
+      width: 500px;
+    }
+
   }
 
   &__title{
@@ -23,8 +34,15 @@
 .article{
   text-align: center;
   padding: 50px 10px;
+  @include media(sm){
+    width: 600px;
+    margin: 0 auto;
+  }
   &__title{
     padding: 10px;
+    @include media(md){
+      font-size:4rem ;
+    }
   }
 
   &__lead{

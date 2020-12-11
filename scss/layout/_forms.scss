@@ -1,5 +1,9 @@
 .form{
   padding:40px 10px;
+  @include media(sm){
+    width: 600px;
+    margin: 0 auto;
+  }
   &__container{
     margin-top: 40px;
   }

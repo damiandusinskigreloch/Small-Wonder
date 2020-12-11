@@ -3,10 +3,20 @@
   &__header{
     padding: 10px;
     margin-bottom: 60px;
+    @include media(sm){
+      width: 600px;
+      margin: 0 auto;
+    }
   }
   &__article{
     padding: 60px 10px;
     background-color: $primary-color;
+  }
+  &__container{
+    @include media(sm){
+      width: 600px;
+      margin: 0 auto;
+    }
   }
   &__title{
     color: $white;

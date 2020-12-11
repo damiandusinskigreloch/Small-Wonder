@@ -92,6 +92,12 @@ ul {
   transition: 0.5s ease-out;
 }
 
+@media (min-width: 640px) {
+  .menu__container {
+    padding: 25px 50px;
+  }
+}
+
 .menu__container--active {
   position: fixed;
   top: 0;
@@ -106,6 +112,10 @@ ul {
   font-size: 2.4rem;
 }
 
+.menu__link--active {
+  border-bottom: 1px solid #fdfdfd;
+}
+
 .menu__social-menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,7 +124,7 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 25px;
-  width: 40%;
+  width: 120px;
 }
 
 .icon {
@@ -155,6 +165,13 @@ ul {
 
 .form {
   padding: 40px 10px;
+}
+
+@media (min-width: 640px) {
+  .form {
+    width: 600px;
+    margin: 0 auto;
+  }
 }
 
 .form__container {
@@ -218,6 +235,7 @@ ul {
 }
 
 .contact {
+  text-align: center;
   position: relative;
   top: 50%;
   left: 50%;
@@ -225,13 +243,34 @@ ul {
           transform: translate(-50%, -50%);
 }
 
+@media (min-width: 640px) {
+  .contact--horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 550px;
+  }
+}
+
 .contact__logo {
   width: 250px;
   margin: 0 auto;
 }
 
+@media (min-width: 640px) {
+  .contact__logo--horizontal {
+    margin: 0;
+  }
+}
+
 .contact__list {
-  text-align: center;
+  margin-bottom: 10px;
 }
 
 .contact__item {
@@ -239,11 +278,23 @@ ul {
   line-height: 1.6;
 }
 
+.contact__button {
+  margin-top: 10px;
+}
+
 .subpage-title {
-  font-size: 3.6rem;
+  padding: 25px;
+  font-size: 3.8rem;
   text-align: center;
   font-weight: 200;
-  padding: 25px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 760px) {
+  .subpage-title {
+    padding: 50px;
+    font-size: 4rem;
+  }
 }
 
 .showcase {
@@ -261,9 +312,27 @@ ul {
           transform: translate(-50%, -50%);
 }
 
+@media (min-width: 640px) {
+  .showcase__container {
+    padding: 60px;
+  }
+}
+
 .showcase__logo {
   margin: 0 auto;
   width: 250px;
+}
+
+@media (min-width: 640px) {
+  .showcase__logo {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .showcase__logo {
+    width: 500px;
+  }
 }
 
 .showcase__title {
@@ -278,8 +347,21 @@ ul {
   padding: 50px 10px;
 }
 
+@media (min-width: 640px) {
+  .article {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
 .article__title {
   padding: 10px;
+}
+
+@media (min-width: 760px) {
+  .article__title {
+    font-size: 4rem;
+  }
 }
 
 .article__lead {
@@ -347,9 +429,23 @@ ul {
   margin-bottom: 60px;
 }
 
+@media (min-width: 640px) {
+  .party__header {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
 .party__article {
   padding: 60px 10px;
   background-color: #179258;
+}
+
+@media (min-width: 640px) {
+  .party__container {
+    width: 600px;
+    margin: 0 auto;
+  }
 }
 
 .party__title {
@@ -382,5 +478,27 @@ ul {
 
 .reservation {
   text-align: center;
+}
+
+@media (min-width: 640px) {
+  .reservation {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.contact-card {
+  position: relative;
+  height: 80vh;
+}
+
+.map {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.map__frame {
+  width: 100%;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

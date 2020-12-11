@@ -28,6 +28,9 @@
     background: $primary-color;
     z-index: 1;
     transition: 0.5s ease-out;
+    @include media(sm){
+      padding: 25px 50px;
+    }
     &--active{
       position: fixed;
       top: 0;
@@ -41,13 +44,16 @@
   
   &__link{
     font-size: 2.4rem;
+    &--active{
+      border-bottom: 1px solid $white;
+    }
   }
 
   &__social-menu-list{
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
-    width: 40%;
+    width: 120px;
   }
 
 }

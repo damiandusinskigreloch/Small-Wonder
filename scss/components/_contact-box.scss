@@ -1,14 +1,33 @@
 .contact{
+  text-align: center;
   @include position-center;
+  &--horizontal{
+    @include media(sm){
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 550px;
+    }
+  }
+
   &__logo{
     width: 250px;
     margin: 0 auto;
+    &--horizontal{
+      @include media(sm){
+        margin: 0;
+      }
+        
+    }
   }
   &__list{
-    text-align: center;
+    margin-bottom: 10px;
   }
   &__item{
     font-size: 1.8rem;
     line-height: 1.6;
+  }
+  &__button{
+    margin-top:10px;
   }
 }
