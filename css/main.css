@@ -51,7 +51,7 @@ ul {
 }
 
 .menu__button {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   padding: 10px;
@@ -93,6 +93,7 @@ ul {
 }
 
 .menu__container--active {
+  position: fixed;
   top: 0;
 }
 
@@ -144,6 +145,60 @@ ul {
   background: url("../img/menu-sm.jpg") no-repeat center center/cover;
 }
 
+.subpage-header--party {
+  background: url("../img/party-sm.jpg") no-repeat center center/cover;
+}
+
+.form {
+  padding: 40px 10px;
+}
+
+.form__container {
+  margin-top: 40px;
+}
+
+.form__input, .form__textarea, .form__select {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px 0 10px;
+  width: 100%;
+  border: 1px solid #b3b3b3;
+  border-radius: 2px;
+  background-color: #fdfdfd;
+  color: #333;
+  font-size: 2rem;
+  -webkit-box-shadow: 1px 1px 2px #b3b3b3;
+          box-shadow: 1px 1px 2px #b3b3b3;
+  outline: none;
+}
+
+.form__textarea {
+  font-family: 'Lato', sans-serif;
+  height: 150px;
+  resize: none;
+  color: #333;
+}
+
+.form__label {
+  font-size: 1.8rem;
+  float: left;
+}
+
+.form__button {
+  border: 0;
+  color: #fdfdfd;
+}
+
+.form__input:valid {
+  -webkit-box-shadow: 1px 1px 2px #179258;
+          box-shadow: 1px 1px 2px #179258;
+}
+
+.form__input:invalid {
+  -webkit-box-shadow: 1px 1px 2px #bb2d1a;
+          box-shadow: 1px 1px 2px #bb2d1a;
+}
+
 .footer {
   position: relative;
   width: 100%;
@@ -155,6 +210,7 @@ ul {
   padding: 10px 25px;
   font-size: 1.8rem;
   background-color: #179258;
+  cursor: pointer;
 }
 
 .contact {
@@ -215,7 +271,7 @@ ul {
 
 .article {
   text-align: center;
-  padding: 50px 15px;
+  padding: 50px 10px;
 }
 
 .article__title {
@@ -276,5 +332,47 @@ ul {
 .restaurant-menu__dish-price {
   font-size: 1.6rem;
   color: #179258;
+}
+
+.party {
+  text-align: center;
+}
+
+.party__header {
+  padding: 10px;
+  margin-bottom: 60px;
+}
+
+.party__article {
+  padding: 60px 10px;
+  background-color: #179258;
+}
+
+.party__title {
+  color: #fdfdfd;
+  margin-bottom: 20px;
+}
+
+.party__lead--white-text {
+  color: #fdfdfd;
+}
+
+.party__seets {
+  margin-top: 40px;
+  font-size: 8rem;
+  color: #fdfdfd;
+}
+
+.party__seets-title {
+  color: #fdfdfd;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.party__small-text {
+  padding: 0 20px;
+  font-size: 1.6em;
+  color: #fdfdfd;
 }
 /*# sourceMappingURL=main.css.map */

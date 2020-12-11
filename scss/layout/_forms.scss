@@ -1,0 +1,41 @@
+.form{
+  padding:40px 10px;
+  &__container{
+    margin-top: 40px;
+  }
+  &__input,
+  &__textarea,
+  &__select{
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px 0 10px;
+  width: 100%;
+  border: 1px solid $light-greey;
+  border-radius: 2px;
+  background-color: $white;
+  color: $greey;
+  font-size: 2rem;
+  box-shadow: 1px 1px 2px $light-greey;
+  outline: none;
+  }
+  &__textarea{
+      font-family: 'Lato', sans-serif;
+      height: 150px;
+      resize: none;
+      color: $greey;
+  }
+  &__label{
+    font-size: 1.8rem;
+    float: left;
+  }
+  &__button{
+    border: 0;
+    color: $white;
+  }
+  &__input:valid{
+    box-shadow: 1px 1px 2px $primary-color;
+  }
+  &__input:invalid{
+    box-shadow: 1px 1px 2px $error-color;
+  }
+}
