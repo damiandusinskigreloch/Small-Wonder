@@ -1,22 +1,7 @@
-.showcase{
-  position: relative;
-  height: 100vh;
+.subpage-header{
   width: 100%;
-  background: url("../img/main-bg-md.jpg") no-repeat center center/cover;
-
-  &__container{
-    @include position-center;
-  } 
-
-  &__logo{
-    margin: 0 auto;
-    width: 250px;
-  }
-
-  &__title{
-    text-align: center;
-    font-weight: 200;
-    font-style: italic;
-    color: $brown;
+  height: 60vh;
+  &--menu{
+    background:url('../img/menu-sm.jpg') no-repeat center center/cover;
   }
 }

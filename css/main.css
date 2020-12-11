@@ -135,31 +135,13 @@ ul {
   background-image: url(../img/icons/menu.png);
 }
 
-.showcase {
-  position: relative;
-  height: 100vh;
+.subpage-header {
   width: 100%;
-  background: url("../img/main-bg-md.jpg") no-repeat center center/cover;
+  height: 60vh;
 }
 
-.showcase__container {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.showcase__logo {
-  margin: 0 auto;
-  width: 250px;
-}
-
-.showcase__title {
-  text-align: center;
-  font-weight: 200;
-  font-style: italic;
-  color: #4d4040;
+.subpage-header--menu {
+  background: url("../img/menu-sm.jpg") no-repeat center center/cover;
 }
 
 .footer {
@@ -195,6 +177,40 @@ ul {
 .contact__item {
   font-size: 1.8rem;
   line-height: 1.6;
+}
+
+.subpage-title {
+  font-size: 3.6rem;
+  text-align: center;
+  font-weight: 200;
+  padding: 25px;
+}
+
+.showcase {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("../img/main-bg-md.jpg") no-repeat center center/cover;
+}
+
+.showcase__container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.showcase__logo {
+  margin: 0 auto;
+  width: 250px;
+}
+
+.showcase__title {
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  color: #4d4040;
 }
 
 .article {
@@ -233,5 +249,32 @@ ul {
 .bg-img--our-beers {
   background: url("../img/beer-sm.jpg") no-repeat center center/cover;
   background-attachment: fixed;
+}
+
+.restaurant-menu {
+  text-align: center;
+  padding: 10px;
+}
+
+.restaurant-menu__type-of-dish {
+  margin-bottom: 40px;
+}
+
+.restaurant-menu__type-of-dish-title {
+  font-size: 3rem;
+  color: #333;
+}
+
+.restaurant-menu__dish-box {
+  padding: 10px;
+}
+
+.restaurant-menu__dish-name {
+  margin-bottom: 5px;
+}
+
+.restaurant-menu__dish-price {
+  font-size: 1.6rem;
+  color: #179258;
 }
 /*# sourceMappingURL=main.css.map */
