@@ -1,0 +1,14 @@
+.contact{
+  @include position-center;
+  &__logo{
+    width: 250px;
+    margin: 0 auto;
+  }
+  &__list{
+    text-align: center;
+  }
+  &__item{
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+}

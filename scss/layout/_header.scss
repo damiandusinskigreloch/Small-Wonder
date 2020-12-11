@@ -5,10 +5,7 @@
   background: url("../img/main-bg-md.jpg") no-repeat center center/cover;
 
   &__container{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include position-center;
   } 
 
   &__logo{

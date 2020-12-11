@@ -1,4 +1,5 @@
 @import 'utilities/variables';
+@import 'utilities/mixins';
 
 @import 'base/reset';
 @import 'base/typography';
@@ -9,6 +10,7 @@
 @import 'layout/footer';
 
 @import 'components/buttons';
+@import 'components/contact-box';
 
 @import 'pages/home';
 @import 'pages/menu';
