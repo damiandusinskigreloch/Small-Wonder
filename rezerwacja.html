@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Small Wonder - Rezerwacja</title>
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -37,24 +38,24 @@
       </div>
     </nav>
     <!-- Start header -->
-    <header class="sub-page reservation-header">
+    <header class="subpage-header subpage-header--reservation">
     </header>
     <!-- Start main -->
     <main>
-      <section class="reservation container text-center">
+      <section class="reservation wrapper__reservation">
         <header>
-          <h2 class="primary-header">Zarezerwuj stolik</h2>
-          <p class="lead"> Jeśli chcesz zarezerwować stolik, zadzwoń pod numer 691 911 535 lub wypełnij poniższy
+          <h2 class="subpage-title">Zarezerwuj stolik</h2>
+          <p class="reservation__lead"> Jeśli chcesz zarezerwować stolik, zadzwoń pod numer 691 911 535 lub wypełnij poniższy
             formularz. W przypadku rezerwacji za pomocą formularza warunkiem jej przyjęcia jest otrzymanie maila z
             potwierdzeniem.</p>
         </header>
-        <div class="form-container">
-          <h4>Wypełnij formularz</h4>
-          <form action="">
-            <label for="date">Podaj date*</label>
-            <input type="date" name="date" id="date" required>
-            <label for="reservation-time">Godzina</label>
-            <select name="reservation-time" id="" required>
+        <div class="form">
+          <h3 class="form__title">Wypełnij formularz</h3>
+          <form class="form__container" action="">
+            <label class="form__label" for="date">Podaj date*</label>
+            <input class="form__input" type="date" name="date" id="date" required>
+            <label class="form__label" for="reservation-time">Godzina</label>
+            <select class="form__select" name="reservation-time" id="" required>
               <option value="12">12</option>
               <option value="13">13</option>
               <option value="14">14</option>
@@ -66,34 +67,33 @@
               <option value="20">20</option>
               <option value="21">21</option>
             </select>
-            <label for="number-of-guest">Liczba osób*</label>
-            <input type="number" name="number-of-guest" min="1" max="6" id="number-of-guest" placeholder="1-6" required>
-            <label for="name">Imie i nazwisko*</label>
-            <input type="text" name="name" id="name" placeholder="Jan Kowalski" required>
-            <label for="email">Email*</label>
-            <input type="email" name="email" id="email" placeholder="email@email.com" required>
-            <label for="phone">Telefon*</label>
-            <input type="tel" name="phone" id="" minlength="9" placeholder="55555555" required>
-            <label for="coments">Pytania</label>
-            <textarea name="coments" id="coments" maxlength="300"></textarea>
-            <input type="submit" value="Wyślij zapytanie">
+            <label class="form__label" for="number-of-guest">Liczba osób*</label>
+            <input class="form__input" type="number" name="number-of-guest" min="1" max="6" id="number-of-guest" placeholder="1-6" required>
+            <label class="form__label" for="name">Imie i nazwisko*</label>
+            <input class="form__input" type="text" name="name" id="name" placeholder="Jan Kowalski" required>
+            <label class="form__label" for="email">Email*</label>
+            <input class="form__input" type="email" name="email" id="email" placeholder="email@email.com" required>
+            <label class="form__label" for="phone">Telefon*</label>
+            <input class="form__input" type="tel" name="phone" id="" minlength="9" placeholder="55555555" required>
+            <label class="form__label" for="coments">Pytania</label>
+            <textarea class="form__textarea" name="coments" id="coments" maxlength="300"></textarea>
+            <input class="button form__button" type="submit" value="Wyślij zapytanie">
           </form>
         </div>
       </section>
     </main>
     <!-- Footer and contact -->
-    <footer>
-      <div class="container text-center content-center">
-        <img class="logo" src="img/logo.png" alt="small wonder logo">
-        <div class="contact">
-          <p>ul. Ratanowa 12, 33-389 Kraków</p>
-          <p> tel: +48 691 911 535</p>
-          <p>rezerwacje@smallwonder.pl</p>
-        </div>
+    <footer class="footer wrapper__footer">
+      <div class="contact">
+        <img class="contact__logo" src="img/logo.png" alt="small wonder logo">
+        <ul class="contact__list">
+          <li class="contact__item">ul. Ratanowa 12, 33-389 Kraków</li>
+          <li class="contact__item">tel: +48 691 911 535</li>
+          <li class="contact__item">rezerwacje@smallwonder.pl</li>
+        </ul>
       </div>
     </footer>
   </div>
-  <script src="js/main.js"></script>
 </body>
 
 </html>
