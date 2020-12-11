@@ -1,0 +1,32 @@
+.article{
+  text-align: center;
+  padding: 50px 15px;
+  &__title{
+    padding: 10px;
+  }
+
+  &__lead{
+    margin-bottom: 10px;
+  }
+  &__small-text{
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+}
+
+.bg-img{
+  height: 300px;
+  width: 100%;
+  &--about-us{
+    background: url("../img/menu-sm.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+  }
+  &--philosophy{
+    background: url("../img/vegetable-sm.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+  }
+  &--our-beers{
+    background: url("../img/beer-sm.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+  }
+}

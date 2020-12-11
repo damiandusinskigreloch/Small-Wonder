@@ -17,10 +17,23 @@ html {
 p {
   font-size: 1.8rem;
   line-height: 1.4;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: 200;
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.4rem;
 }
 
 a {
@@ -147,5 +160,50 @@ ul {
   font-weight: 200;
   font-style: italic;
   color: #4d4040;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 1.8rem;
+  background-color: #179258;
+}
+
+.article {
+  text-align: center;
+  padding: 50px 15px;
+}
+
+.article__title {
+  padding: 10px;
+}
+
+.article__lead {
+  margin-bottom: 10px;
+}
+
+.article__small-text {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.bg-img {
+  height: 300px;
+  width: 100%;
+}
+
+.bg-img--about-us {
+  background: url("../img/menu-sm.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.bg-img--philosophy {
+  background: url("../img/vegetable-sm.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.bg-img--our-beers {
+  background: url("../img/beer-sm.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
 }
 /*# sourceMappingURL=main.css.map */
