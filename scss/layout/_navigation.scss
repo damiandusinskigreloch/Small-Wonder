@@ -29,7 +29,7 @@
     z-index: 1;
     transition: 0.5s ease-out;
     @include media(sm){
-      padding: 25px 50px;
+      padding: 20px 50px;
     }
     &--active{
       position: fixed;
@@ -39,7 +39,7 @@
 
   &__item{
     text-align: center;
-    line-height: 2;
+    line-height: 1.6;
   }
   
   &__link{
@@ -52,7 +52,7 @@
   &__social-menu-list{
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 15px;
     width: 120px;
   }
 

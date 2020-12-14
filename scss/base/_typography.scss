@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@200&family=Roboto:wght@300&display=swap');
 html{
   font-size: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: $paragraph-font;
 }
 p{
   font-size: 1.8rem;
@@ -8,6 +9,7 @@ p{
   color: $greey;
 }
 h1,h2,h3{
+  font-family: $titles-font;
   font-weight: 200;
 }
 h1{

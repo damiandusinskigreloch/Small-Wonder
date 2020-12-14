@@ -6,18 +6,26 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 550px;
+      width: 400px;
     }
+    @include media(md){
+      width: 600px;
+    }
+  }
+  @include media(lg){
+    display: block;
   }
 
   &__logo{
-    width: 250px;
+    width: 200px;
     margin: 0 auto;
     &--horizontal{
       @include media(sm){
         margin: 0;
-      }
-        
+      } 
+    }
+    @include media(lg){
+      margin: 0 auto;
     }
   }
   &__list{
@@ -26,6 +34,9 @@
   &__item{
     font-size: 1.8rem;
     line-height: 1.6;
+    @include media(lg){
+      font-size: 2rem;
+    }
   }
   &__button{
     margin-top:10px;

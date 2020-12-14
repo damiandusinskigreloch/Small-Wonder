@@ -43,7 +43,7 @@
     <!-- Start main -->
     <main>
       <section class="reservation wrapper__reservation">
-        <header>
+        <header class="reservation__header">
           <h2 class="subpage-title">Zarezerwuj stolik</h2>
           <p class="reservation__lead"> Jeśli chcesz zarezerwować stolik, zadzwoń pod numer 691 911 535 lub wypełnij poniższy
             formularz. W przypadku rezerwacji za pomocą formularza warunkiem jej przyjęcia jest otrzymanie maila z
@@ -53,20 +53,10 @@
           <h3 class="form__title">Wypełnij formularz</h3>
           <form class="form__container" action="">
             <label class="form__label" for="date">Podaj date*</label>
-            <input class="form__input" type="date" name="date" id="date" required>
+            <input class="form__input date-input" type="date" name="date" required>
             <label class="form__label" for="reservation-time">Godzina</label>
-            <select class="form__select" name="reservation-time" id="" required>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-            </select>
+            <input class="form__input" type="time" id="appt" name="appt"
+            min="12:00" max="22:00" required>
             <label class="form__label" for="number-of-guest">Liczba osób*</label>
             <input class="form__input" type="number" name="number-of-guest" min="1" max="6" id="number-of-guest" placeholder="1-6" required>
             <label class="form__label" for="name">Imie i nazwisko*</label>
@@ -76,7 +66,7 @@
             <label class="form__label" for="phone">Telefon*</label>
             <input class="form__input" type="tel" name="phone" id="" minlength="9" placeholder="55555555" required>
             <label class="form__label" for="coments">Pytania</label>
-            <textarea class="form__textarea" name="coments" id="coments" maxlength="300"></textarea>
+            <textarea class="form__textarea" name="coments" id="coments" maxlength="300" placeholder="Twoja wiadomość."></textarea>
             <input class="button form__button" type="submit" value="Wyślij zapytanie">
           </form>
         </div>

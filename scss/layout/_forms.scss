@@ -1,8 +1,19 @@
 .form{
   padding:40px 10px;
   @include media(sm){
-    width: 600px;
+    width: 500px;
     margin: 0 auto;
+  }
+  @include media(md){
+    width: 600px;
+  }
+  &__title{
+    @include media(md){
+      font-size:3rem ;
+    }
+    @include media(lg){
+      font-size:3.4rem ;
+    }
   }
   &__container{
     margin-top: 40px;

@@ -3,6 +3,10 @@
   height: 100vh;
   width: 100%;
   background: url("../img/main-bg-md.jpg") no-repeat center center/cover;
+  @include media(lg){
+    background: url("../img/main-bg-lg.jpg") no-repeat center center/cover;
+  }
+
 
   &__container{
     @include position-center;
@@ -26,17 +30,27 @@
 
   &__title{
     text-align: center;
-    font-weight: 200;
-    font-style: italic;
+    font-family: $showcase-font;
     color: $brown;
+    @include media(md){
+      font-size: 4rem;
+    }
+    @include media(lg){
+      font-size: 6rem;
+    }
   }
 }
 .article{
   text-align: center;
   padding: 50px 10px;
   @include media(sm){
-    width: 600px;
+    width: 500px;
     margin: 0 auto;
+  }
+  @include media(lg){
+    width: 900px;
+    margin: 0 auto;
+    padding: 80px 10px;
   }
   &__title{
     padding: 10px;
@@ -46,11 +60,18 @@
   }
 
   &__lead{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    @include media(md){
+      font-size:2rem ;
+      line-height: 1.6;
+    }
   }
   &__small-text{
     font-size: 1.6rem;
     margin-bottom: 15px;
+    @include media(md){
+      font-size:1.8rem ;
+    }
   }
 }
 
@@ -60,13 +81,31 @@
   &--about-us{
     background: url("../img/menu-sm.jpg") no-repeat center center/cover;
     background-attachment: fixed;
+    @include media(md){
+      background:url('../img/menu-md.jpg') no-repeat center center/cover;    
+    }
+    @include media(lg){
+      background:url('../img/menu-lg.jpg') no-repeat center center/cover;    
+    }
   }
   &--philosophy{
     background: url("../img/vegetable-sm.jpg") no-repeat center center/cover;
     background-attachment: fixed;
+    @include media(md){
+      background:url('../img/vegetable-md.jpg') no-repeat center center/cover;    
+    }
+    @include media(lg){
+      background:url('../img/vegetable-lg.jpg') no-repeat center center/cover;    
+    }
   }
   &--our-beers{
     background: url("../img/beer-sm.jpg") no-repeat center center/cover;
     background-attachment: fixed;
+    @include media(md){
+      background:url('../img/beer-md.jpg') no-repeat center center/cover;    
+    }
+    @include media(lg){
+      background:url('../img/beer-lg.jpg') no-repeat center center/cover;    
+    }
   }
 }

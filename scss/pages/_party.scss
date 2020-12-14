@@ -4,8 +4,12 @@
     padding: 10px;
     margin-bottom: 60px;
     @include media(sm){
-      width: 600px;
-      margin: 0 auto;
+      width: 500px;
+      margin: 0 auto 60px;
+    }
+    @include media(lg){
+      width: 900px;
+      margin: 0 auto 60px;
     }
   }
   &__article{
@@ -14,13 +18,24 @@
   }
   &__container{
     @include media(sm){
-      width: 600px;
+      width: 500px;
+      margin: 0 auto;
+    }
+    @include media(lg){
+      width: 900px;
       margin: 0 auto;
     }
   }
   &__title{
     color: $white;
     margin-bottom: 20px;
+    font-size: 3.4rem;
+  }
+  &__lead{
+    @include media(md){
+      font-size:2rem ;
+      line-height: 1.6;
+    }
   }
   &__lead--white-text{
     color: $white;
@@ -40,5 +55,8 @@
     padding:0 20px;
     font-size: 1.6em;
     color: $white;
+    @include media(md){
+      font-size:1.8rem ;
+    }
   }
 }

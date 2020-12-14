@@ -3,11 +3,29 @@
   height: 60vh;
   &--menu{
     background:url('../img/menu-sm.jpg') no-repeat center center/cover;
+    @include media(md){
+      background:url('../img/menu-md.jpg') no-repeat center center/cover;    
+    }
+    @include media(lg){
+      background:url('../img/menu-lg.jpg') no-repeat center center/cover;    
+    }
   }
   &--party{
     background:url('../img/party-sm.jpg') no-repeat center center/cover;
+    @include media(md){
+      background:url('../img/party-md.jpg') no-repeat center center/cover;    
+    }
+    @include media(lg){
+      background:url('../img/party-lg.jpg') no-repeat center center/cover;    
+    }
   }
   &--reservation{
     background:url('../img/reservation-sm.jpg') no-repeat center center/cover;
+    @include media(md){
+      background:url('../img/reservation-md.jpg') no-repeat center center/cover;    
+    }
+    @include media(lg){
+      background:url('../img/reservation-lg.jpg') no-repeat center center/cover;    
+    }
   }
 }

@@ -1,6 +1,14 @@
 .contact-card{
   position: relative;
-  height: 80vh;
+  height: 90vh;
+  background: $white;
+  box-shadow: 2px 2px 4px $greey;
+  @include media(lg){
+    position: absolute;
+    width: 350px;
+    top: 0;
+    right: 10%;
+  }
 }
 
 .map{
