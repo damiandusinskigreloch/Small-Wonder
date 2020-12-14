@@ -8,11 +8,12 @@ menuBtn.addEventListener('click', () => {
 
 let dateInput = document.querySelector('.date-input');
 let todayDate = new Date();
-var targetDate = new Date();
+let targetDate = new Date();
 targetDate.setDate(targetDate.getDate() + 14);
 let tdd = todayDate.getDate();
 let tmm = todayDate.getMonth() + 1;
 let tyy = todayDate.getFullYear();
+
 let fdd = targetDate.getDate();
 let fmm = targetDate.getMonth() + 1;
 let fyy = targetDate.getFullYear();
